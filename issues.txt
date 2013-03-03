@@ -1,0 +1,128 @@
+Issues:
+
+Words at graphemic layer when there are no spaces to distinguish words in the MS?
+
+Mecum: one word or two words?
+
+Pronouns: how many fields?
+	Illam:	case, number, gender
+	Me:	case, number (no gener)
+
+U/V at linguistic layer (lemmas and regularized spellings)
+
+Participles should be tagged as active/passive/deponents? Bot in form and meaning, they're always active.
+
+Should adjectives (e.g. 2nd class like 'facilis', pronouns (like 'ego') and participles, where the gender is not marked morphologically but only by the syntactical context, should be marked as 'mascul./femin.'? Maybe only adjectives, participles and pronouns that refer to a noun (like bonus amicus, illam puellam, amantem puerum) but not those pronouns that refer to 'extra-linguistic' reality entities difficult to ascertain (like: "Ego veni quia...")? But if the latter example becomes "Ego sum qui primus veneram", the entity is no longer 'extra-linguistic'. Still, ambiguity cases may occur with pronouns.
+
+Positive/comparative/superlative adjectives? So far, I'm marking it only for comparative and superlatives. I use the positive as base form: e.g.
+maius                           §       adj,[magnus],n,s,n,comparative,maius
+
+Should I mark 'active/passive/deponent' with verb sum?
+
+TEI P4 has <c> (character). Use it instead of <g>? Does <c> exist in P5 too? From P4 SA.html#SASE: "For a <c> element, values such as letter, punctuation, digit may be used."
+
+
+file:///home/ilbuonme/travaglio/2006%20estate%20cch%20london/TEI/tei-p5-doc/html_senza_u1_conflicts/SA.html#SACSAL
+14.4.2 Alignment of Parallel Texts
+
+Not pointer:
+ <linkGrp type="alignment" domains="div-e div-f">
+  <link targets="#e_1 #f_1"/>
+  <link targets="#e_2 #f_2"/>
+  <link targets="#e_3 #f_3"/>
+  <link targets="#e_4 #f_4"/>
+ </linkGrp>
+
+But, for external files, it seems that I must use:
+<!-- ... -->
+<xptr xml:id='RZUIQ1'
+      doc='fazdoc'
+      target="./#xpath1(//div0[2]/div1[6]/p[1]/q[1])"/>
+<!-- ... -->
+(where xptr might be a typo for ptr; or does it stand for XPointer?)
+Neither 14.2.1 Pointing Elsewhere and 14.2.2 Special Case: Pointing Locally seem to allow for
+foo.xml#bar
+(but allows for more complicate cases!) Maybe foo.xml#bar is OK
+
+Possible solutions:
+1. inline markup with <seg>
+2. offline joining with <join>
+3. offline xpointer/xpath with range(start,end)
+4. offline intermediate pointers
+
+Words:
+	better: inline SEGs, to increase readability (but who cares about source readability?
+	I might just leave a blank line, instead of the seg)
+Graphemes/letters:
+	better: offline intermediate pointers, not to burden letters file
+
+Best:
+always use intermediate pointers, like this:
+
+<link targets="graphematic.xml#1.1 #1.1"/>
+<ptr id="1.1" targets="alphabetic.xml#1.1.1 alphabetic.xml#1.1.2 alphabetic.xml#1.1.3"/>
+
+
+
+---
+
+<w id="1" ref="pre,cum,cum">
+	c<abbr expan="&u;m">&um;</abbr>
+</w>
+
+<g id="2" ref="_" type="space" />
+oppure semplicemente:
+_
+
+<w id="3" ref="nou,dominus1,nom,sing,dominus">
+	<abbr expan="domin&u;s">&dms;</abbr>
+</w>
+
+<g id="4" ref="_" type="space" />
+oppure semplicemente:
+_
+
+<g id="5" ref="sc" type="punctuation" />
+oppure semplicemente:
+&sc;
+
+<w id="6" ref="ver,dico1,pf,ind,3,sing,dixit">
+dixit
+</w>
+
+-------------------------
+
+Regole di 'espansione' sui tre livelli:
+
+
+Quelle della versione A sono tutte fregnacce, perché io trascrivo solo grafemi (caratteri unicode o elementi XML). Il livello alfabetico sarà derivato dalla tabella dei segni.
+Restano due problemi:
+1. posso ancora usare gli elementi XML (Ilaria, P4/P5) o devo usare <g>?
+2. allineamento con le <w>. Come scriverlo a mano?
+
+Se c'è un'"abbreviazione":
+- se è c&um; (brevigrafo finale) → tabella dei segni → alfabetico: "c,uv,m"
+- se è &dms; (brevigrafo/logografo) → tabella dei segni → alfabetico: "d,o,m,i,n,uv,s"
+- se è max. (abbreviazione) → alfabetico: "m,a,x" → linguistico: "adj,[maximus],d,s,m,maximo".
+(Ma quest'ultimo caso è da vedere; al limite quest'ultimo è l'unico caso in cui il contenuto alfabetico non si può ricavare automaticamente dalla tabella dei grafemi)
+
+---
+
+Suggestions and questions after my talk at the 1st AIUCD conference, 14/12/2012:
+- Roberto Rosselli Del Turco. For table of signs, use <char> and <glyph>
+- Francesca Tomasi: for table of signs, customise TEI with Roma
+- Fabio Ciotti: use Unicode and TEI as much as you can
+- Dino Buzzetti: how do you collate at different textual layers?
+- Roberto Rosselli Del Turco (in a private discussion) suggests http://www.menota.org/HB1-1_contents.xhtml
+- Fabio Ciracì: how about the overlapping problem?
+
+---
+
+Nella email
+Von: "Kalvesmaki, Joel" <KalvesmakiJ@doaks.org>
+An:	Paolo Monella <paolo.monella@gmx.net>
+Betreff:	Re: Encoding different graphical systems
+Datum:	Tue, 18. Sep 2012 18:19:36
+Joel mi scrive: "Here are the files I put together up in Tufts:"
+https://dl.dropbox.com/u/18454916/Kalvesmaki%2C%20open%20editions%20experiment.zip
+Let me know your thoughts, at your pace.
