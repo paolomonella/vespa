@@ -1,465 +1,778 @@
-<charDesc>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+  <!-- ... -->
+  <charDecl>
 
-  <char xml:id= "A">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial A- (but: aren't minusc. and capit. allographs?) (?)</value>
-      <localName>Content</localName>
-      <value>a</value>
-    </charProp>
-  </char>
+    <char xml:id= "A">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial A- (but: aren't minusc. and capit. allographs?) (?)</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>a</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>A</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "B">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial B-</value>
-      <localName>Content</localName>
-      <value>b</value>
-    </charProp>
-  </char>
+    <char xml:id= "B">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial B-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>b</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>B</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "C">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial C-</value>
-      <localName>Content</localName>
-      <value>c</value>
-    </charProp>
-  </char>
+    <char xml:id= "C">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial C-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>c</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>C</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "D">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial D-</value>
-      <localName>Content</localName>
-      <value>d</value>
-    </charProp>
-  </char>
+    <char xml:id= "D">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial D-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>d</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>D</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "E">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial E-</value>
-      <localName>Content</localName>
-      <value>e</value>
-    </charProp>
-  </char>
+    <char xml:id= "E">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial E-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>e</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>E</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "F">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial F-</value>
-      <localName>Content</localName>
-      <value>f</value>
-    </charProp>
-  </char>
+    <char xml:id= "F">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial F-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>f</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>F</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "G">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial G-</value>
-      <localName>Content</localName>
-      <value>g</value>
-    </charProp>
-  </char>
+    <char xml:id= "G">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial G-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>g</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>G</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "H">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial H-</value>
-      <localName>Content</localName>
-      <value>h</value>
-    </charProp>
-  </char>
+    <char xml:id= "H">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial H-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>h</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>H</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "J">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial J (in 2nd row of title). Allograph? (?)</value>
-      <localName>Content</localName>
-      <value>j</value>
-    </charProp>
-  </char>
+    <char xml:id= "J">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial J (in 2nd row of title). Allograph? (?)</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>j</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>J</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "L">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial L</value>
-      <localName>Content</localName>
-      <value>l</value>
-    </charProp>
-  </char>
+    <char xml:id= "L">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial L</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>l</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>L</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "M">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial M-</value>
-      <localName>Content</localName>
-      <value>m</value>
-    </charProp>
-  </char>
+    <char xml:id= "M">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial M-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>m</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>M</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "N">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial N-</value>
-      <localName>Content</localName>
-      <value>n</value>
-    </charProp>
-  </char>
+    <char xml:id= "N">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial N-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>n</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>N</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "O">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial O-</value>
-      <localName>Content</localName>
-      <value>o</value>
-    </charProp>
-  </char>
+    <char xml:id= "O">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial O-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>o</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>O</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "P">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial P-</value>
-      <localName>Content</localName>
-      <value>p</value>
-    </charProp>
-  </char>
+    <char xml:id= "P">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial P-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>p</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>P</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "Q">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial Q-</value>
-      <localName>Content</localName>
-      <value>q</value>
-    </charProp>
-  </char>
+    <char xml:id= "Q">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial Q-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>q</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>Q</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "R">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial R-</value>
-      <localName>Content</localName>
-      <value>r</value>
-    </charProp>
-  </char>
+    <char xml:id= "R">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial R-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>r</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>R</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "S">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial round S-</value>
-      <localName>Content</localName>
-      <value>s</value>
-    </charProp>
-  </char>
+    <char xml:id= "S">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial round S-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>s</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>S</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "T">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial T</value>
-      <localName>Content</localName>
-      <value>t</value>
-    </charProp>
-  </char>
+    <char xml:id= "T">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial T</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>t</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>T</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "U">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial U (NOT V; if it'll be V-shaped, better using V as ID)-</value>
-      <localName>Content</localName>
-      <value>uv</value>
-    </charProp>
-  </char>
+    <char xml:id= "U">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial U (NOT V; if it'll be V-shaped, better using V as ID)-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>uv</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>U</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "Z">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin capital uncial Z-</value>
-      <localName>Content</localName>
-      <value>z</value>
-    </charProp>
-  </char>
+    <char xml:id= "Z">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin capital uncial Z-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>z</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>Z</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "a">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial a</value>
-      <localName>Content</localName>
-      <value>a</value>
-    </charProp>
-  </char>
+    <char xml:id= "a">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial a</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>a</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>a</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "b">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial b</value>
-      <localName>Content</localName>
-      <value>b</value>
-    </charProp>
-  </char>
+    <char xml:id= "b">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial b</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>b</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>b</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "c">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial c</value>
-      <localName>Content</localName>
-      <value>c</value>
-    </charProp>
-  </char>
+    <char xml:id= "c">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial c</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>c</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>c</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "d">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial d</value>
-      <localName>Content</localName>
-      <value>d</value>
-    </charProp>
-  </char>
+    <char xml:id= "d">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial d</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>d</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>d</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "e">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial e</value>
-      <localName>Content</localName>
-      <value>e</value>
-    </charProp>
-  </char>
+    <char xml:id= "e">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial e</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>e</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>e</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "f">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial f-</value>
-      <localName>Content</localName>
-      <value>f</value>
-    </charProp>
-  </char>
+    <char xml:id= "f">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial f-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>f</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>f</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "g">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial g</value>
-      <localName>Content</localName>
-      <value>g</value>
-    </charProp>
-  </char>
+    <char xml:id= "g">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial g</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>g</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>g</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "h">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial h</value>
-      <localName>Content</localName>
-      <value>h</value>
-    </charProp>
-  </char>
+    <char xml:id= "h">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial h</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>h</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>h</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "i">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial i</value>
-      <localName>Content</localName>
-      <value>i</value>
-    </charProp>
-  </char>
+    <char xml:id= "i">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial i</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>i</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>i</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "l">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial l</value>
-      <localName>Content</localName>
-      <value>l</value>
-    </charProp>
-  </char>
+    <char xml:id= "l">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial l</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>l</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>l</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "m">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial m</value>
-      <localName>Content</localName>
-      <value>m</value>
-    </charProp>
-  </char>
+    <char xml:id= "m">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial m</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>m</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>m</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "n">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial n</value>
-      <localName>Content</localName>
-      <value>n</value>
-    </charProp>
-  </char>
+    <char xml:id= "n">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial n</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>n</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>n</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "o">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial o</value>
-      <localName>Content</localName>
-      <value>o</value>
-    </charProp>
-  </char>
+    <char xml:id= "o">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial o</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>o</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>o</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "p">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial p</value>
-      <localName>Content</localName>
-      <value>p</value>
-    </charProp>
-  </char>
+    <char xml:id= "p">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial p</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>p</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>p</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "q">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial q</value>
-      <localName>Content</localName>
-      <value>q</value>
-    </charProp>
-  </char>
+    <char xml:id= "q">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial q</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>q</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>q</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "r">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial r</value>
-      <localName>Content</localName>
-      <value>r</value>
-    </charProp>
-  </char>
+    <char xml:id= "r">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial r</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>r</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>r</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "s">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial round s</value>
-      <localName>Content</localName>
-      <value>s</value>
-    </charProp>
-  </char>
+    <char xml:id= "s">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial round s</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>s</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>s</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "t">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial t</value>
-      <localName>Content</localName>
-      <value>t</value>
-    </charProp>
-  </char>
+    <char xml:id= "t">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial t</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>t</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>t</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "u">
-    <charProp>
-      <localName>Expression</localName>
-      <value>u/v Latin minuscule uncial (u-shaped, not v-shaped)</value>
-      <localName>Content</localName>
-      <value>uv</value>
-    </charProp>
-  </char>
+    <char xml:id= "u">
+      <charProp>
+        <localName>Expression</localName>
+        <value>u/v Latin minuscule uncial (u-shaped, not v-shaped)</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>uv</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>u</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "z">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial z-</value>
-      <localName>Content</localName>
-      <value>z</value>
-    </charProp>
-  </char>
+    <char xml:id= "z">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial z-</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>z</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>z</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "ae">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Latin minuscule uncial e with a tail bottom left, img/ax.jpg</value>
-      <localName>Content</localName>
-      <value>a,e</value>
-    </charProp>
-  </char>
+    <char xml:id= "ae">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Latin minuscule uncial e with a tail bottom left, img/ae.jpg</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>a,e</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>ę</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "a1">
-    <charProp>
-      <localName>Expression</localName>
-      <value>(in 1. line) Latin minuscule uncial a with kind of h attached on the right (?)</value>
-      <localName>Content</localName>
-      <value>a</value>
-    </charProp>
-  </char>
+    <char xml:id= "a1">
+      <charProp>
+        <localName>Expression</localName>
+        <value>(in 1. line) Latin minuscule uncial a with kind of h attached on the right (?)</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>a</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>A</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "b_">
-    <charProp>
-      <localName>Expression</localName>
-      <value>(in 1. line) Latin minuscule uncial b with a macron top right (?)</value>
-      <localName>Content</localName>
-      <value>b,i,s</value>
-    </charProp>
-  </char>
+    <char xml:id= "b_">
+      <charProp>
+        <localName>Expression</localName>
+        <value>(in 1. line) Latin minuscule uncial b with a macron top right (?)</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>b,i,s</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>b́</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "te">
-    <charProp>
-      <localName>Expression</localName>
-      <value>(end 2. line) A minuscule 't' and a minuscule 'e' joined. It looks like a 'æ' (?)</value>
-      <localName>Content</localName>
-      <value>t,e</value>
-    </charProp>
-  </char>
+    <char xml:id= "te">
+      <charProp>
+        <localName>Expression</localName>
+        <value>(end 2. line) A minuscule 't' and a minuscule 'e' joined. It looks like a 'æ' (?)</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>t,e</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>te</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "·">
-    <charProp>
-      <localName>Expression</localName>
-      <value>Middle dot</value>
-      <localName>Content</localName>
-      <value></value>
-    </charProp>
-  </char>
+    <char xml:id= "·">
+      <charProp>
+        <localName>Expression</localName>
+        <value>Middle dot</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value></value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>·</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "u_">
-    <charProp>
-      <localName>Expression</localName>
-      <value>(in 2. line) u/v Latin minuscule uncial (u-shaped, not v-shaped) with macron above</value>
-      <localName>Content</localName>
-      <value>uv,m</value>
-    </charProp>
-  </char>
+    <char xml:id= "u_">
+      <charProp>
+        <localName>Expression</localName>
+        <value>(in 2. line) u/v Latin minuscule uncial (u-shaped, not v-shaped) with macron above</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>uv,m</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>ū</value>
+      </charProp>
+    </char>
 
-  <char xml:id= ";">
-    <charProp>
-      <localName>Expression</localName>
-      <value>(end 2. line) It has the shape of a colon ';', but what does it mean? (?)</value>
-      <localName>Content</localName>
-      <value></value>
-    </charProp>
-  </char>
+    <char xml:id= ";">
+      <charProp>
+        <localName>Expression</localName>
+        <value>(end 2. line) It has the shape of a colon ';', but what does it mean? (?)</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value></value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>;</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "u1">
-    <charProp>
-      <localName>Expression</localName>
-      <value>u/v Latin minuscule uncial (u-shaped, not v-shaped) with a line top right (?)</value>
-      <localName>Content</localName>
-      <value>uv,i</value>
-    </charProp>
-  </char>
+    <char xml:id= "u1">
+      <charProp>
+        <localName>Expression</localName>
+        <value>u/v Latin minuscule uncial (u-shaped, not v-shaped) with a line top right (?)</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>uv,i</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>ú</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "e_">
-    <charProp>
-      <localName>Expression</localName>
-      <value>(end 4. line) Latin minuscule uncial e with macron above</value>
-      <localName>Content</localName>
-      <value>e,m</value>
-    </charProp>
-  </char>
+    <char xml:id= "e_">
+      <charProp>
+        <localName>Expression</localName>
+        <value>(end 4. line) Latin minuscule uncial e with macron above</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>e,m</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>ē</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "q2">
-    <charProp>
-      <localName>Expression</localName>
-      <value>(end 5. line) Latin minuscule uncial q with macron above (and colon?) (?) </value>
-      <localName>Content</localName>
-      <value>q,uv,a,e</value>
-    </charProp>
-  </char>
+    <char xml:id= "q2">
+      <charProp>
+        <localName>Expression</localName>
+        <value>(end 5. line) Latin minuscule uncial q with macron above (and colon?) (?) </value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>q,uv,a,e</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>q́;</value>
+      </charProp>
+    </char>
 
-  <char xml:id= "q1">
-    <charProp>
-      <localName>Expression</localName>
-      <value>(end 6. line) q with colon (?)</value>
-      <localName>Content</localName>
-      <value>q,uv,e</value>
-    </charProp>
-  </char>
+    <char xml:id= "q1">
+      <charProp>
+        <localName>Expression</localName>
+        <value>(end 6. line) q with colon (?)</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>q,uv,e</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>q;</value>
+      </charProp>
+    </char>
 
-</charDesc>
+  </charDecl>
+</teiHeader>
+
+<text>
+<body>
 
 <g id="1.1" ref="#J" />
 <g id="1.2" ref="#u" />
@@ -513,6 +826,7 @@
 
 <g id="10.1" ref="#T" />
 <g id="10.2" ref="#e" />
+<g id="10.3" ref="#r" />
 
 <g id="11.1" ref="#t" />
 <g id="11.2" ref="#e" />
@@ -799,3 +1113,6 @@
 <g id="68.6" ref="#r" />
 <g id="68.7" ref="#p" />
 
+</text>
+</body>
+</TEI>

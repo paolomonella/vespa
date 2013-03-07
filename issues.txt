@@ -115,3 +115,18 @@ Suggestions and questions after my talk at the 1st AIUCD conference, 14/12/2012:
 - Dino Buzzetti: how do you collate at different textual layers?
 - Roberto Rosselli Del Turco (in a private discussion) suggests http://www.menota.org/HB1-1_contents.xhtml
 - Fabio Ciracì: how about the overlapping problem?
+
+---
+
+Issues arisen after I wrote the AIUCD article (beginning of March 2013):
+- How to define alphabemes in the table of alphabemes?
+	- what is their 'expression'? (the graphameS? but how about abbreviations?)
+		- alphabeme 'a' is expressed by graphames 'a' and 'A', but also
+			by grapheme 'æ' somehow
+	- what is their content?
+		- *in a way* (in the intentions of who invented the alphabet), phonemes
+		- but most certainly one can't define an alphabeme by means of its
+			phonetic content
+- How to define Unicode characters in <charDecl>? If I manage to to this, I can avoid using <g> elements pervasively.
+- How to accommodate two tables (of graphemes and of alphabemes), i.e. two different <charDecl> elements, in the same <teiHeader> of the menota.xml file?
+- In Menota, can <w> include <me:facs>, <me:dipl> and <me:norm>, and can each of them include <g> elements directly?

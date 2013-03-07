@@ -163,6 +163,10 @@
 <ptr id="10.2" targets=
 		"alphabetic.xml#10.2.1" />
 
+<link targets="graphic.xml#10.3 #10.3" />
+<ptr id="10.3" targets=
+		"alphabetic.xml#10.3.1" />
+
 <link targets="graphic.xml#11.1 #11.1" />
 <ptr id="11.1" targets=
 		"alphabetic.xml#11.1.1" />

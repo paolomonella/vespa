@@ -62,7 +62,8 @@
 <link targets="linguistic.xml#10 #10" />
 <ptr id="10" targets=
 		"alphabetic.xml#10.1.1
-		alphabetic.xml#10.2.1" />
+		alphabetic.xml#10.2.1
+		alphabetic.xml#10.3.1" />
 
 <link targets="linguistic.xml#11 #11" />
 <ptr id="11" targets=

@@ -1,0 +1,87 @@
+# SCAN FOR GRAPHEMES
+                g_id = 0    # Sequential ID for any grapheme in the transcription. It goes into
+                            # <g id="1"> in the XML/TEI file of the graphematic transcription
+                for char in gr_layer:           # Perform characters distribution
+                    g_id = g_id + 1             # Sequential grapheme id
+                    sg_id = sw_id+'.'+str(g_id) # This is simply a string corresponding
+                                                # to g_id (which is an integer). It is used
+                                                # to insert the ID in TEI/XML strings
+                    if char == '[':
+                        g_mode = True
+                        g_id = g_id - 1     # As this is not writing a <g>, the counter
+                                            # should not keep running, so I'm bringing it back
+                    elif char == ']':
+                        print('\t<g id="'+sg_id+'" ref="'+g_ref+'" />') #sgn: ho tolto str(sg_id)
+                        g_mode = False
+                        g_ref = ''
+                    elif not g_mode:
+                        print('\t<g id="'+sg_id+'" ref="'+char+'" />')  #sgn: ho tolto str(sg_id)
+                    elif g_mode:
+                        g_ref += char   # ricomincia da qui sgn; vd. se definire funzioni
+                        g_id = g_id - 1 # As this is not writing a <g>, the counter
+                                        # should not keep running, so I'm bringing it back
+                    else:
+                        raise Error
+                        print('The line type was not recognized')
+
+---
+
+a_id = k
+                                a_ref = a_table[k]                                    
+                                # sgn: bisogna aggiungere i pointer tra livello grafemico
+                                # e alfabetico
+
+                                
+                        else:
+                            # sgn: questo è sbagliato, perché l'id deve essere cmq calcolato.
+                            # Mi sa che bisgona passare cmq per la funzione de_parenthesize
+                            a_id = a_ref = g_table[i]
+
+                        print('Nel file alfabetico:')
+                        print('\t<α id="'+a_id+'" ref="'+a_ref+'" />')
+
+---
+
+for k in sorted(a_table):
+                            print('\t\t<target  alphabetic.xml#'+k+' />', file=ag_xml)
+
+
+                        print('</linkGrp>\n', file=ag_xml)
+
+---
+
+        for i in g_table.keys():
+            print(i,':',g_table[i])
+
+---
+
+
+VERSIONE A
+
+Fuori dagli elementi <w>
+0A. se <g> non è figlio di <w>, indica un grafema non incluso nella parola ('markup grafico'),
+	il cui "ref" (→ tabella dei grafemi è indicato esplicitamente come attributo)
+0B. oppure: se un carattere unicode o un'entità xml non sono figli di <w>, indicano
+	un grafema non incluso nella parola ('markup grafico').
+	Se si tratta di un carattere unicode, il suo "ref" (→ tabella dei grafemi) coincide
+	con il carattere unicode;
+	Se si tratta di un'entità XML... iniziano i problemi. Potrebbe coincidere con la stringa
+	'dentro' l'entità, una volta tolti "&" e ";". Ma questo è più complicato da definire come
+	regola formale. A meno che un'entità XML non possa essere un ID. In questo caso, anche qui
+	il suo "ref" (→ tabella dei grafemi) coincide con l'entità.
+
+Dentro gli elementi <w>
+1. <w> include una sequenza di:
+	a. caratteri unicode, o
+	b. entità XML
+2. Se dentro <w> c'è un carattere unicode,
+	→ a livello grafematico questo rappresenta un grafema il cui "ref" (→ tabella dei grafemi)
+	 	è quel carattere unicode
+	→ a livello alfabetico significa che quel grafema ha come contenuto immediato una sola
+		unità alfabetica, il cui "ref" (→ tabella delle unità alfabetiche)
+		è quel carattere unicode
+2. Se dentro <w> c'è un'entità XML,...
+
+---
+
+VERSIONE B

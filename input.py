@@ -52,40 +52,53 @@ def read_table_of_signs(table_file):
     """ Inputs a CSV file with a table of signs and outputs a dictionary where:
             - Keys: sign IDs;
             - values: lists (a_list) including all 'contents'
-        I'm ignoring split_sign_expression and split_sign_digit_representation right now
+        I'm ignoring split_sign_expression and split_sign_digit_visualisation right now
         
     """
 
     with open(table_file,'r') as tbf:
         table = {}
         for tb_row in tbf.readlines():
-                split_sign_id, split_sign_content, split_sign_expression, split_sign_digit_representation = tb_row.split('\t')
+                split_sign_id, split_sign_content, split_sign_expression, split_sign_digit_visualisation = tb_row.split('\t')
                 expr_list = split_sign_content.split(',')  # This is a list
                 table[split_sign_id] = expr_list
     return table
 
 
-def charDesc(table_file):
+def charDecl(table_file):
     """ Opens a table of signs (graphemes or alphabemes) and creates
-        the TEI charDesc element. It returns a string (including many
+        the TEI charDecl element. It returns a string (including many
         rows), ready to be printed to a XML file
         
     """
     
     with open(table_file,'r') as tbf:
-        s = '<charDesc>\n\n'
+        s =     '<TEI xmlns="http://www.tei-c.org/ns/1.0">\n'
+        s = s + '<teiHeader>\n'
+        s = s + '  <!-- ... -->\n'
+        
+        s = s + '  <charDecl>\n\n'
         for tb_row in tbf.readlines():
-                split_sign_id, split_sign_content, split_sign_expression, split_sign_digit_representation = tb_row.split('\t')
+                split_sign_id, split_sign_content, split_sign_expression, split_sign_digit_visualisation = tb_row.split('\t')
                 # expr_list = split_sign_content.split(',')  # This is a list # Not necessary
-                s = s + '  <char xml:id= "'+split_sign_id+'">\n'
-                s = s + '    <charProp>\n'
-                s = s + '      <localName>Expression</localName>\n'
-                s = s + '      <value>'+split_sign_expression+'</value>\n'
-                s = s + '      <localName>Content</localName>\n'
-                s = s + '      <value>'+split_sign_content+'</value>\n'
-                s = s + '    </charProp>\n'
-                s = s + '  </char>\n\n'
-        s = s + '</charDesc>\n'
+                s = s + '    <char xml:id= "'+split_sign_id+'">\n'
+                s = s + '      <charProp>\n'
+                s = s + '        <localName>Expression</localName>\n'
+                s = s + '        <value>'+split_sign_expression+'</value>\n'
+                s = s + '      </charProp>\n'
+                s = s + '      <charProp>\n'
+                s = s + '        <localName>Content</localName>\n'
+                s = s + '        <value>'+split_sign_content+'</value>\n'
+                s = s + '      </charProp>\n'
+                s = s + '      <charProp>\n'
+                s = s + '        <localName>Visualisation</localName>\n'
+                s = s + '        <value>'+split_sign_digit_visualisation[:-1]+'</value>\n'
+                s = s + '      </charProp>\n'
+                s = s + '    </char>\n\n'
+        s = s + '  </charDecl>\n'
+        s = s + '</teiHeader>\n\n'
+        s = s + '<text>\n'
+        s = s + '<body>\n'
     return s
     
 
@@ -96,7 +109,7 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
             (a line per word). This arrangement is meant to allow this script to
             insert interpretative SEGs marking what I think are words at the linguistic
             level(something that is not present in the MS),
-            so I can later more easily align graphematic transcription
+            so I can later more easily align graphic transcription
             with linguistic transcription;
             2) the column to the right has inflected words at linguistic layer.
             3) the divider is a "§" key.
@@ -110,7 +123,7 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
 
 
         # OPEN FILES TO WRITE TO
-        g_xml = open('graphematic.xml','w')
+        g_xml = open('graphic.xml','w')
         a_xml = open('alphabetic.xml','w')
         l_xml = open('linguistic.xml','w')
         al_xml = open('align_alph_ling.xml','w')
@@ -130,8 +143,8 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
         tr_rows = trf.readlines()
 
         # WRITE TABLE OF SIGNS/GRAPHEMES TO TEI HEADER
-        print(charDesc(graphemes_table),file=g_xml) #sgn4
-        print(charDesc(alphabemes_table),file=a_xml) #sgn4
+        print(charDecl(graphemes_table),file=g_xml) #sgn4
+        print(charDecl(alphabemes_table),file=a_xml) #sgn4
 
         # CYCLE WORDS IN TRANSCRIPTION
         # w_id: Sequential ID for any word in the transcription. It goes into
@@ -178,7 +191,8 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
             # If none of the previous 'special line'-cases applies, start a new word
             else:
                 # In linguistic file
-                print('<w id="'+sw_id+'">'+tr_l_layer+'</w>', file=l_xml)
+                # print('<w id="'+sw_id+'">'+tr_l_layer+'</w>', file=l_xml)
+                print('<w id="'+sw_id+'" ana="'+tr_l_layer+'" /w>', file=l_xml)
 
                 # Align word (at ling. layer) with a sequence of graphemes
                 print('<link targets="linguistic.xml#'+sw_id+' #'+sw_id+'" />', file=gl_xml)
@@ -190,7 +204,7 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
 
                 
                 # WITHIN "WORDS", CREATE THE LIST OF GRAPHEME TOKENS
-                # tr_g_layer: transcription string at graphematic layer
+                # tr_g_layer: transcription string at graphic layer
                 # sw_id: stringified word ID
                 # g_tokens: a dictionary where:
                 #   keys are grapheme token's sequential IDs in transcription
@@ -203,19 +217,19 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
                 g_id_suffix = 0
                 for g_id in sorted(g_tokens):
                     g_id_suffix = g_id_suffix +1
-                    # Print to graphematic file
+                    # Print to graphic file
                     # g_id: the ID of each grapheme token in the transcription ("1.1", "1.2"...)
                     # g_ref: the REF linking to each grapheme type
                     #   in the grapheme table
                     g_ref = g_tokens[g_id]  # I'm adding this for code readability's sake
                     print('<g id="'+g_id+'" ref="#'+g_ref+'" />', file=g_xml)
-                    # Align grapheme (at graphematic layer) with a sequence of alphab. units
-                    print('<link targets="graphematic.xml#'+g_id+' #'+g_id+'" />', file=ag_xml)
+                    # Align grapheme (at graphic layer) with a sequence of alphab. units
+                    print('<link targets="graphic.xml#'+g_id+' #'+g_id+'" />', file=ag_xml)
                     print('<ptr id="'+g_id+'" targets=\n\t\t"', sep='', end='', file=ag_xml)
                     if g_id_suffix == len(g_tokens):
                         gl_print_end = ''
                     # Add a new target to the ling./graph. intermediate pointer
-                    print('graphematic.xml#'+g_id, sep='', end=gl_print_end, file=gl_xml)
+                    print('graphic.xml#'+g_id, sep='', end=gl_print_end, file=gl_xml)
                     
                     # RETRIEVE ALPHABETIC CONTENT(S) OF GRAPHEME TOKEN FROM GRAPHEME TABLE
                     # g_table[g_tokens[g_id]] = g_table[g_ref]: the list of all letters
@@ -227,7 +241,7 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
                         a_id_suffix = a_id_suffix +1
                         a_id = g_id+'.'+str(a_id_suffix)
                         # Print to alphabetic file
-                        print('<c id="'+a_id+'" ref="#'+a_ref+'" />', file=a_xml)
+                        print('<g id="'+a_id+'" ref="#'+a_ref+'" />', file=a_xml)
                         # Add a new target to the graph./alph. intermediate pointer
                         if a_id_suffix == len(g_table[g_ref]):
                                 ag_print_end = ''
@@ -240,7 +254,7 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
                     # Close intermediate pointer in graph./alph. alignment file
                     print('" />\n', file=ag_xml)
                 
-                # Insert a new line (no longer a new "word"-SEG) in graphematic
+                # Insert a new line (no longer a new "word"-SEG) in graphic
                 # and in alphabetical files after a sequence of graphems that constitute
                 # a word, for XML file readability's sake
                 print('', file=g_xml)
@@ -251,6 +265,9 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
                 # Close intermediate pointer tag in linguistic/alph. alignment file
                 print('" />\n', file=al_xml)
 
+        # CLOSE ELEMENTS AT THE END OF XML FILES
+        print('</text>\n</body>\n</TEI>', file=g_xml)
+        print('</text>\n</body>\n</TEI>', file=a_xml)
 
         # CLOSE FILES
         g_xml.close()
@@ -269,7 +286,7 @@ def menotify(transcription_file,graphemes_table,alphabemes_table):
             (a line per word). This arrangement is meant to allow this script to
             insert interpretative SEGs marking what I think are words at the linguistic
             level(something that is not present in the MS),
-            so I can later more easily align graphematic transcription
+            so I can later more easily align graphic transcription
             with linguistic transcription;
             2) the column to the right has inflected words at linguistic layer.
             3) the divider is a "§" key.
@@ -298,8 +315,8 @@ def menotify(transcription_file,graphemes_table,alphabemes_table):
         tr_rows = trf.readlines()
 
         # WRITE TABLE OF SIGNS/GRAPHEMES TO TEI HEADER
-        print(charDesc(graphemes_table),file=xml) #sgn4
-        #print(charDesc(alphabemes_table),file=xml)
+        print(charDecl(graphemes_table),file=xml) #sgn4
+        #print(charDecl(alphabemes_table),file=xml)
                 #sgn I have no clue where one could write this *second* table of signs
                 # in the Menotified unique XML file
 
@@ -359,7 +376,7 @@ def menotify(transcription_file,graphemes_table,alphabemes_table):
 
                 
                 # WITHIN "WORDS", CREATE THE LIST OF GRAPHEME TOKENS
-                # tr_g_layer: transcription string at graphematic layer
+                # tr_g_layer: transcription string at graphic layer
                 # sw_id: stringified word ID
                 # g_tokens: a dictionary where:
                 #   keys are grapheme token's sequential IDs in transcription
@@ -372,7 +389,7 @@ def menotify(transcription_file,graphemes_table,alphabemes_table):
                 g_id_suffix = 0
                 for g_id in sorted(g_tokens):
                     g_id_suffix = g_id_suffix +1
-                    # Add to the facs variable (graphematic layer)
+                    # Add to the facs variable (graphic layer)
                     # g_id: the ID of each grapheme token in the transcription ("1.1", "1.2"...)
                     # g_ref: the REF linking to each grapheme type
                     #   in the grapheme table
@@ -395,7 +412,7 @@ def menotify(transcription_file,graphemes_table,alphabemes_table):
                         a_id_suffix = a_id_suffix +1
                         a_id = g_id+'.'+str(a_id_suffix)
                         # add to alphabetic/me:dipl transcription layer
-                        dipl = dipl + '\t\t<c id="'+a_id+'" ref="#alphabeme_'+a_ref+'" />\n'
+                        dipl = dipl + '\t\t<g id="'+a_id+'" ref="#alphabeme_'+a_ref+'" />\n'
                         # Add a new target to the graph./alph. intermediate pointer
                         if a_id_suffix == len(g_table[g_ref]):
                                 ag_print_end = ''
@@ -421,6 +438,8 @@ def menotify(transcription_file,graphemes_table,alphabemes_table):
                 print(align, file=xml)
                 print('</w>', file=xml)
 
+        # CLOSE ELEMENTS AT THE END OF MENOTA XML FILE
+        print('<text>\n<body>\n</TEI>', file=xml)
 
         # CLOSE FILES
         xml.close()
