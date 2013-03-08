@@ -123,12 +123,12 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
 
 
         # OPEN FILES TO WRITE TO
-        g_xml = open('graphic.xml','w')
-        a_xml = open('alphabetic.xml','w')
-        l_xml = open('linguistic.xml','w')
-        al_xml = open('align_alph_ling.xml','w')
-        gl_xml = open('align_graph_ling.xml','w')
-        ag_xml = open('align_alph_graph.xml','w')
+        g_xml = open('salm_graphic.xml','w')
+        a_xml = open('salm_alphabetic.xml','w')
+        l_xml = open('salm_linguistic.xml','w')
+        al_xml = open('salm_align_alph_ling.xml','w')
+        gl_xml = open('salm_align_graph_ling.xml','w')
+        ag_xml = open('salm_align_alph_graph.xml','w')
 
         # INPUT THE TABLES OF SIGNS
         # At the moment, I don't need to input the table of signs/alphabemes as a dictionary.
@@ -195,11 +195,11 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
                 print('<w id="'+sw_id+'" ana="'+tr_l_layer+'" /w>', file=l_xml)
 
                 # Align word (at ling. layer) with a sequence of graphemes
-                print('<link targets="linguistic.xml#'+sw_id+' #'+sw_id+'" />', file=gl_xml)
+                print('<link targets="salm_linguistic.xml#'+sw_id+' #'+sw_id+'" />', file=gl_xml)
                 print('<ptr id="'+sw_id+'" targets=\n\t\t"', sep='', end='', file=gl_xml)
 
                 # Align word (at ling. layer) with a sequence of alphabetical units
-                print('<link targets="linguistic.xml#'+sw_id+' #'+sw_id+'" />', file=al_xml)
+                print('<link targets="salm_linguistic.xml#'+sw_id+' #'+sw_id+'" />', file=al_xml)
                 print('<ptr id="'+sw_id+'" targets=\n\t\t"', sep='', end='', file=al_xml)
 
                 
@@ -224,12 +224,12 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
                     g_ref = g_tokens[g_id]  # I'm adding this for code readability's sake
                     print('<g id="'+g_id+'" ref="#'+g_ref+'" />', file=g_xml)
                     # Align grapheme (at graphic layer) with a sequence of alphab. units
-                    print('<link targets="graphic.xml#'+g_id+' #'+g_id+'" />', file=ag_xml)
+                    print('<link targets="salm_graphic.xml#'+g_id+' #'+g_id+'" />', file=ag_xml)
                     print('<ptr id="'+g_id+'" targets=\n\t\t"', sep='', end='', file=ag_xml)
                     if g_id_suffix == len(g_tokens):
                         gl_print_end = ''
                     # Add a new target to the ling./graph. intermediate pointer
-                    print('graphic.xml#'+g_id, sep='', end=gl_print_end, file=gl_xml)
+                    print('salm_graphic.xml#'+g_id, sep='', end=gl_print_end, file=gl_xml)
                     
                     # RETRIEVE ALPHABETIC CONTENT(S) OF GRAPHEME TOKEN FROM GRAPHEME TABLE
                     # g_table[g_tokens[g_id]] = g_table[g_ref]: the list of all letters
@@ -245,11 +245,11 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
                         # Add a new target to the graph./alph. intermediate pointer
                         if a_id_suffix == len(g_table[g_ref]):
                                 ag_print_end = ''
-                        print('alphabetic.xml#'+a_id, sep='', end=ag_print_end, file=ag_xml)
+                        print('salm_salm_alphabetic.xml#'+a_id, sep='', end=ag_print_end, file=ag_xml)
                         # Add a new target to the ling./alph. intermediate pointer
                         if a_id_suffix == len(g_table[g_ref]) and g_id_suffix == len(g_tokens):
                             al_print_end = ''
-                        print('alphabetic.xml#'+a_id, sep='', end=al_print_end, file=al_xml)
+                        print('salm_alphabetic.xml#'+a_id, sep='', end=al_print_end, file=al_xml)
                         
                     # Close intermediate pointer in graph./alph. alignment file
                     print('" />\n', file=ag_xml)
@@ -300,7 +300,7 @@ def menotify(transcription_file,graphemes_table,alphabemes_table):
 
 
         # OPEN FILE TO WRITE TO
-        xml = open('menota.xml','w')
+        xml = open('salm_menota.xml','w')
 
         # INPUT THE TWO TABLES OF SIGNS
         # At the moment, I don't need to input the table of signs/alphabemes as a dictionary. sgn5
@@ -427,7 +427,7 @@ def menotify(transcription_file,graphemes_table,alphabemes_table):
                 facs = facs + '\t</me:facs>'
                 dipl = dipl + '\t</me:dipl>'
 
-                # PRINT THE ACTUAL STUFF TO THE MENOTA.XML FILE
+                # PRINT THE ACTUAL STUFF TO THE salm_menota.xml FILE
                 print('<w id="'+sw_id+'">', file=xml)
                 # Print at graph./me:facs layer
                 print(facs, file=xml)
@@ -447,6 +447,6 @@ def menotify(transcription_file,graphemes_table,alphabemes_table):
         trf.close()
 
             
-teify1("transcription.csv","table_graphemes.csv","table_alphabemes.csv")
-menotify("transcription.csv","table_graphemes.csv","table_alphabemes.csv")
+teify1("salmasianus.csv","salm_table_graphemes.csv","salm_table_alphabemes.csv")
+menotify("salmasianus.csv","salm_table_graphemes.csv","salm_table_alphabemes.csv")
 publish_by_products(".","/home/ilbuonme/siti/paolo.monella/lincei/files/edition")

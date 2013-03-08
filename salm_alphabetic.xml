@@ -1,0 +1,641 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+  <!-- ... -->
+  <charDecl>
+
+    <char xml:id= "a">
+      <charProp>
+        <localName>Expression</localName>
+        <value>a,A</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin a</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>a</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "b">
+      <charProp>
+        <localName>Expression</localName>
+        <value>b,B</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin b</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>b</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "c">
+      <charProp>
+        <localName>Expression</localName>
+        <value>c,C</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin c</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>c</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "d">
+      <charProp>
+        <localName>Expression</localName>
+        <value>d,D</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin d</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>d</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "e">
+      <charProp>
+        <localName>Expression</localName>
+        <value>e,E</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin e</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>e</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "f">
+      <charProp>
+        <localName>Expression</localName>
+        <value>f,F</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin f</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>f</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "g">
+      <charProp>
+        <localName>Expression</localName>
+        <value>g,G</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin g</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>g</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "h">
+      <charProp>
+        <localName>Expression</localName>
+        <value>h,H</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin h</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>h</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "i">
+      <charProp>
+        <localName>Expression</localName>
+        <value>i</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin i (?)</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>i</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "j">
+      <charProp>
+        <localName>Expression</localName>
+        <value>J</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin j (?)</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>J</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "l">
+      <charProp>
+        <localName>Expression</localName>
+        <value>l,L</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin l</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>l</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "m">
+      <charProp>
+        <localName>Expression</localName>
+        <value>m,M</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin m</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>m</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "n">
+      <charProp>
+        <localName>Expression</localName>
+        <value>n,N</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin n</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>n</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "o">
+      <charProp>
+        <localName>Expression</localName>
+        <value>o,O</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin o</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>o</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "p">
+      <charProp>
+        <localName>Expression</localName>
+        <value>p,P</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin p</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>p</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "q">
+      <charProp>
+        <localName>Expression</localName>
+        <value>q,Q</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin q</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>q</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "r">
+      <charProp>
+        <localName>Expression</localName>
+        <value>r,R</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin r</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>r</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "s">
+      <charProp>
+        <localName>Expression</localName>
+        <value>s,S</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin s</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>s</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "t">
+      <charProp>
+        <localName>Expression</localName>
+        <value>t,T</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin t</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>t</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "uv">
+      <charProp>
+        <localName>Expression</localName>
+        <value>u,U</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin u/v</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>u</value>
+      </charProp>
+    </char>
+
+    <char xml:id= "z">
+      <charProp>
+        <localName>Expression</localName>
+        <value>z,Z</value>
+      </charProp>
+      <charProp>
+        <localName>Content</localName>
+        <value>Latin z</value>
+      </charProp>
+      <charProp>
+        <localName>Visualisation</localName>
+        <value>z</value>
+      </charProp>
+    </char>
+
+  </charDecl>
+</teiHeader>
+
+<text>
+<body>
+
+<g id="1.1.1" ref="#j" />
+<g id="1.2.1" ref="#uv" />
+<g id="1.3.1" ref="#d" />
+<g id="1.4.1" ref="#i" />
+<g id="1.5.1" ref="#c" />
+<g id="1.6.1" ref="#i" />
+<g id="1.7.1" ref="#uv" />
+<g id="1.7.2" ref="#m" />
+
+<g id="2.1.1" ref="#c" />
+<g id="2.2.1" ref="#o" />
+<g id="2.3.1" ref="#c" />
+<g id="2.4.1" ref="#i" />
+
+<g id="3.1.1" ref="#e" />
+<g id="3.2.1" ref="#t" />
+
+<g id="4.1.1" ref="#p" />
+<g id="4.2.1" ref="#i" />
+<g id="4.3.1" ref="#s" />
+<g id="4.4.1" ref="#t" />
+<g id="4.5.1" ref="#o" />
+<g id="4.6.1" ref="#r" />
+<g id="4.7.1" ref="#i" />
+<g id="4.8.1" ref="#s" />
+
+<g id="6.1.1" ref="#uv" />
+<g id="6.2.1" ref="#e" />
+<g id="6.3.1" ref="#s" />
+<g id="6.4.1" ref="#p" />
+<g id="6.5.1" ref="#e" />
+
+<g id="7.1.1" ref="#j" />
+<g id="7.2.1" ref="#uv" />
+<g id="7.3.1" ref="#d" />
+<g id="7.4.1" ref="#i" />
+<g id="7.5.1" ref="#c" />
+<g id="7.6.1" ref="#i" />
+
+<g id="8.1.1" ref="#uv" />
+<g id="8.2.1" ref="#uv" />
+<g id="8.3.1" ref="#l" />
+<g id="8.4.1" ref="#c" />
+<g id="8.5.1" ref="#a" />
+<g id="8.6.1" ref="#n" />
+<g id="8.7.1" ref="#o" />
+
+<g id="10.1.1" ref="#t" />
+<g id="10.2.1" ref="#e" />
+<g id="10.3.1" ref="#r" />
+
+<g id="11.1.1" ref="#t" />
+<g id="11.2.1" ref="#e" />
+<g id="11.3.1" ref="#r" />
+<g id="11.4.1" ref="#n" />
+<g id="11.5.1" ref="#a" />
+<g id="11.5.2" ref="#e" />
+
+<g id="12.1.1" ref="#uv" />
+<g id="12.2.1" ref="#a" />
+<g id="12.3.1" ref="#r" />
+<g id="12.4.1" ref="#i" />
+<g id="12.5.1" ref="#a" />
+<g id="12.6.1" ref="#s" />
+
+<g id="14.1.1" ref="#c" />
+<g id="14.2.1" ref="#uv" />
+<g id="14.3.1" ref="#n" />
+<g id="14.4.1" ref="#c" />
+<g id="14.5.1" ref="#t" />
+<g id="14.6.1" ref="#a" />
+<g id="14.7.1" ref="#b" />
+<g id="14.7.2" ref="#i" />
+<g id="14.7.3" ref="#s" />
+
+<g id="15.1.1" ref="#t" />
+<g id="15.2.1" ref="#r" />
+<g id="15.3.1" ref="#a" />
+<g id="15.4.1" ref="#d" />
+<g id="15.5.1" ref="#i" />
+<g id="15.6.1" ref="#t" />
+<g id="15.7.1" ref="#i" />
+<g id="15.8.1" ref="#s" />
+
+<g id="16.1.1" ref="#a" />
+<g id="16.2.1" ref="#r" />
+<g id="16.3.1" ref="#t" />
+<g id="16.4.1" ref="#e" />
+<g id="16.5.1" ref="#s" />
+
+<g id="19.1.1" ref="#l" />
+<g id="19.2.1" ref="#i" />
+<g id="19.3.1" ref="#n" />
+<g id="19.4.1" ref="#q" />
+<g id="19.5.1" ref="#uv" />
+<g id="19.6.1" ref="#i" />
+<g id="19.7.1" ref="#t" />
+<g id="19.8.1" ref="#e" />
+
+<g id="20.1.1" ref="#p" />
+<g id="20.2.1" ref="#i" />
+<g id="20.3.1" ref="#e" />
+<g id="20.4.1" ref="#r" />
+<g id="20.5.1" ref="#i" />
+<g id="20.6.1" ref="#o" />
+<g id="20.7.1" ref="#s" />
+
+<g id="22.1.1" ref="#c" />
+<g id="22.2.1" ref="#o" />
+<g id="22.3.1" ref="#l" />
+<g id="22.4.1" ref="#l" />
+<g id="22.5.1" ref="#e" />
+<g id="22.6.1" ref="#s" />
+
+<g id="24.1.1" ref="#e" />
+<g id="24.2.1" ref="#t" />
+
+<g id="25.1.1" ref="#s" />
+<g id="25.2.1" ref="#c" />
+<g id="25.3.1" ref="#r" />
+<g id="25.4.1" ref="#i" />
+<g id="25.5.1" ref="#b" />
+<g id="25.6.1" ref="#i" />
+<g id="25.7.1" ref="#t" />
+<g id="25.7.2" ref="#e" />
+
+<g id="26.1.1" ref="#m" />
+<g id="26.2.1" ref="#e" />
+
+<g id="27.1.1" ref="#c" />
+<g id="27.2.1" ref="#uv" />
+<g id="27.2.2" ref="#m" />
+
+<g id="30.1.1" ref="#j" />
+<g id="30.2.1" ref="#l" />
+<g id="30.3.1" ref="#l" />
+<g id="30.4.1" ref="#e" />
+
+<g id="31.1.1" ref="#e" />
+<g id="31.2.1" ref="#g" />
+<g id="31.3.1" ref="#o" />
+
+<g id="32.1.1" ref="#uv" />
+<g id="32.2.1" ref="#e" />
+<g id="32.3.1" ref="#s" />
+<g id="32.4.1" ref="#p" />
+<g id="32.5.1" ref="#a" />
+
+<g id="33.1.1" ref="#p" />
+<g id="33.2.1" ref="#r" />
+<g id="33.3.1" ref="#e" />
+<g id="33.4.1" ref="#c" />
+<g id="33.5.1" ref="#o" />
+<g id="33.6.1" ref="#r" />
+
+<g id="36.1.1" ref="#c" />
+<g id="36.2.1" ref="#uv" />
+<g id="36.2.2" ref="#i" />
+
+<g id="37.1.1" ref="#d" />
+<g id="37.2.1" ref="#i" />
+<g id="37.3.1" ref="#uv" />
+<g id="37.4.1" ref="#a" />
+<g id="37.4.2" ref="#e" />
+
+<g id="38.1.1" ref="#s" />
+<g id="38.2.1" ref="#e" />
+<g id="38.3.1" ref="#p" />
+<g id="38.4.1" ref="#e" />
+
+<g id="39.1.1" ref="#d" />
+<g id="39.2.1" ref="#e" />
+<g id="39.3.1" ref="#d" />
+<g id="39.4.1" ref="#i" />
+<g id="39.5.1" ref="#s" />
+<g id="39.6.1" ref="#t" />
+<g id="39.7.1" ref="#i" />
+<g id="39.8.1" ref="#s" />
+
+<g id="42.1.1" ref="#p" />
+<g id="42.2.1" ref="#e" />
+<g id="42.3.1" ref="#r" />
+<g id="42.4.1" ref="#m" />
+<g id="42.5.1" ref="#uv" />
+<g id="42.6.1" ref="#l" />
+<g id="42.7.1" ref="#t" />
+<g id="42.8.1" ref="#a" />
+<g id="42.9.1" ref="#s" />
+
+<g id="43.1.1" ref="#uv" />
+<g id="43.2.1" ref="#r" />
+<g id="43.3.1" ref="#b" />
+<g id="43.4.1" ref="#e" />
+<g id="43.5.1" ref="#s" />
+
+<g id="45.1.1" ref="#p" />
+<g id="45.2.1" ref="#o" />
+<g id="45.3.1" ref="#p" />
+<g id="45.4.1" ref="#uv" />
+<g id="45.5.1" ref="#l" />
+<g id="45.6.1" ref="#o" />
+
+<g id="46.1.1" ref="#s" />
+<g id="46.2.1" ref="#p" />
+<g id="46.3.1" ref="#e" />
+<g id="46.4.1" ref="#c" />
+<g id="46.5.1" ref="#t" />
+<g id="46.6.1" ref="#a" />
+<g id="46.7.1" ref="#n" />
+<g id="46.8.1" ref="#t" />
+<g id="46.9.1" ref="#e" />
+
+<g id="47.1.1" ref="#p" />
+<g id="47.2.1" ref="#a" />
+<g id="47.3.1" ref="#uv" />
+<g id="47.4.1" ref="#o" />
+<g id="47.5.1" ref="#r" />
+<g id="47.6.1" ref="#e" />
+<g id="47.6.2" ref="#m" />
+
+<g id="50.1.1" ref="#s" />
+<g id="50.2.1" ref="#c" />
+<g id="50.3.1" ref="#r" />
+<g id="50.4.1" ref="#i" />
+<g id="50.5.1" ref="#b" />
+<g id="50.6.1" ref="#e" />
+<g id="50.7.1" ref="#r" />
+<g id="50.8.1" ref="#e" />
+
+<g id="51.1.1" ref="#m" />
+<g id="51.2.1" ref="#a" />
+<g id="51.3.1" ref="#i" />
+<g id="51.4.1" ref="#uv" />
+<g id="51.5.1" ref="#s" />
+
+<g id="52.1.1" ref="#o" />
+<g id="52.2.1" ref="#p" />
+<g id="52.3.1" ref="#uv" />
+<g id="52.4.1" ref="#s" />
+
+<g id="54.1.1" ref="#e" />
+<g id="54.2.1" ref="#t" />
+
+<g id="55.1.1" ref="#d" />
+<g id="55.2.1" ref="#uv" />
+<g id="55.3.1" ref="#l" />
+<g id="55.4.1" ref="#c" />
+<g id="55.5.1" ref="#i" />
+<g id="55.6.1" ref="#a" />
+
+<g id="56.1.1" ref="#c" />
+<g id="56.2.1" ref="#a" />
+<g id="56.3.1" ref="#r" />
+<g id="56.4.1" ref="#m" />
+<g id="56.5.1" ref="#i" />
+<g id="56.6.1" ref="#n" />
+<g id="56.7.1" ref="#a" />
+
+<g id="57.1.1" ref="#q" />
+<g id="57.1.2" ref="#uv" />
+<g id="57.1.3" ref="#e" />
+<g id="57.2.1" ref="#r" />
+<g id="57.3.1" ref="#o" />
+
+<g id="60.1.1" ref="#n" />
+<g id="60.2.1" ref="#e" />
+<g id="60.3.1" ref="#c" />
+
+<g id="61.1.1" ref="#m" />
+<g id="61.2.1" ref="#e" />
+<g id="61.3.1" ref="#l" />
+
+<g id="62.1.1" ref="#e" />
+<g id="62.2.1" ref="#r" />
+<g id="62.3.1" ref="#i" />
+<g id="62.4.1" ref="#t" />
+
+<g id="63.1.1" ref="#s" />
+<g id="63.2.1" ref="#o" />
+<g id="63.3.1" ref="#l" />
+<g id="63.4.1" ref="#uv" />
+<g id="63.5.1" ref="#m" />
+
+<g id="65.1.1" ref="#a" />
+<g id="65.2.1" ref="#l" />
+<g id="65.3.1" ref="#i" />
+<g id="65.4.1" ref="#q" />
+<g id="65.5.1" ref="#uv" />
+<g id="65.6.1" ref="#i" />
+<g id="65.7.1" ref="#d" />
+
+<g id="66.1.1" ref="#q" />
+<g id="66.2.1" ref="#uv" />
+<g id="66.3.1" ref="#o" />
+<g id="66.4.1" ref="#q" />
+<g id="66.4.2" ref="#uv" />
+<g id="66.4.3" ref="#e" />
+
+<g id="67.1.1" ref="#i" />
+<g id="67.2.1" ref="#uv" />
+<g id="67.3.1" ref="#r" />
+<g id="67.4.1" ref="#i" />
+<g id="67.5.1" ref="#s" />
+
+<g id="68.1.1" ref="#h" />
+<g id="68.2.1" ref="#a" />
+<g id="68.3.1" ref="#b" />
+<g id="68.4.1" ref="#e" />
+<g id="68.5.1" ref="#b" />
+<g id="68.6.1" ref="#r" />
+<g id="68.7.1" ref="#p" />
+
+</text>
+</body>
+</TEI>
