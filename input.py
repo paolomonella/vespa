@@ -192,7 +192,7 @@ def teify1(transcription_file,graphemes_table,alphabemes_table):
             else:
                 # In linguistic file
                 # print('<w id="'+sw_id+'">'+tr_l_layer+'</w>', file=l_xml)
-                print('<w id="'+sw_id+'" ana="'+tr_l_layer+'" /w>', file=l_xml)
+                print('<w id="'+sw_id+'" ana="'+tr_l_layer+'" />', file=l_xml)
 
                 # Align word (at ling. layer) with a sequence of graphemes
                 print('<link targets="salm_linguistic.xml#'+sw_id+' #'+sw_id+'" />', file=gl_xml)
